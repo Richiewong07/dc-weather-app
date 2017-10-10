@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Weather Results</h1>
+    <div>
+      <p>
+        Temperature: {{ data['main']['temp'] }} F
+        <br />
+        Temperature High: {{ data['main']['temp_max'] }} F
+        <br />
+        Temperature Low: {{ data['main']['temp_min'] }} F
+        <br />
+        Wind Speed: {{ data['wind']['speed'] }} mph
+        <br />
+        Humidity: {{ data['main']['humidity'] }} %
+      </p>
+        </div>
+    </form>
+  </body>
+</html>
