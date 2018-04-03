@@ -1,24 +1,37 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Weather</title>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1>Weather Results</h1>
-    <div>
-      <p>
+{% extends "base.html" %}
+
+{% block title %}Weather Results{% endblock %}
+
+
+
+
+{% block content %}
+
+
+<div class="col-sm-6 offset-sm-3">
+  <h1 class="text-center"><strong>Weather Results </strong></strong></h1><br />
+      <h4 class="text-center">
         Temperature: {{ data['main']['temp'] }} F
         <br />
+        <hr />
         Temperature High: {{ data['main']['temp_max'] }} F
         <br />
+        <hr />
         Temperature Low: {{ data['main']['temp_min'] }} F
         <br />
+        <hr />
         Wind Speed: {{ data['wind']['speed'] }} mph
         <br />
+        <hr />
         Humidity: {{ data['main']['humidity'] }} %
-      </p>
-        </div>
-    </form>
-  </body>
-</html>
+        <br />
+        <hr />
+        <a href="/" class="btn btn-primary" role="button" class="center-block">Search Another City</a>
+      </h4>
+      <br />
+
+    <h6 class="text-center">Copyright 2017</h6>
+</div>
+
+
+{% endblock %}

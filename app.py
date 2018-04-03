@@ -44,7 +44,7 @@ class WeatherHandler(TemplateHandler):
         }
 
     r = requests.request("GET", url, headers=headers, params=querystring)
-    
+
     r.json()
 
     template = ENV.get_template('weather.html')

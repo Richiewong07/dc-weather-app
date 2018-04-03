@@ -1,4 +1,42 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}Weather DC{% endblock %}
+
+
+
+
+{% block content %}
+
+
+<div class="col-sm-6 offset-sm-3">
+  <h1 class="text-center"><strong>Weather Checker</strong></h1>
+  <bR />
+
+
+  <form action=" /weather " method="post">
+    <div class="form-group">
+      <input type="text" class="form-control" id="city" name="city" placeholder="Enter City Name" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br />
+
+  <h6 class="text-center">Copyright 2017</h6>
+
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title></title>
@@ -15,4 +53,4 @@
       </form>
     </div>
   </body>
-</html>
+</html> -->
